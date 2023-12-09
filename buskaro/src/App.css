@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+input:invalid[focused = "true"] ~ span {
+    display: block;
+}
+input:invalid[focused = "true"]  {
+    border: 1px solid red;
+}
+  
+.hideScroll::-webkit-scrollbar {
+    display: none;
+}
